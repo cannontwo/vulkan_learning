@@ -24,7 +24,7 @@ include_directories(${GLFW_INCLUDE_DIRS})
 target_link_libraries(HelloTriangle glfw)
 
 # Compile shaders
-set(GLSL_VALIDATOR "$ENV{VULKAN_SDK}/bin/glslangValidator")
+set(GLSL_VALIDATOR "/usr/bin/glslangValidator")
 
 file(GLOB_RECURSE GLSL_SOURCE_FILES
   "shaders/*.frag"
